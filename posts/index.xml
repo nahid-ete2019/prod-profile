@@ -2,17 +2,28 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Nahid Hasan</title>
-    <link>http://www.example.com/posts/</link>
+    <link>https://nahid-ete2019.github.io/prod-profile/posts/</link>
     <description>Recent content in Posts on Nahid Hasan</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 21 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://www.example.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 21 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://nahid-ete2019.github.io/prod-profile/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Setup SSL for Nginx</title>
-      <link>http://www.example.com/posts/setup-ssl-for-nginx/</link>
+      <title>Install and Configure SFTP</title>
+      <link>https://nahid-ete2019.github.io/prod-profile/posts/install-and-configure-sftp/</link>
       <pubDate>Mon, 21 Feb 2022 00:00:00 +0000</pubDate>
       
-      <guid>http://www.example.com/posts/setup-ssl-for-nginx/</guid>
+      <guid>https://nahid-ete2019.github.io/prod-profile/posts/install-and-configure-sftp/</guid>
+      <description>Some of the developers from Nautilus project team have asked for SFTP access to at least one of the app server in Stratos DC. After going through the requirements, the system admins team has decided to configure the SFTP server on App Server 2 server in Stratos Datacenter. Please configure it as per the following instructions:
+a. Create an SFTP user rose and set its password to GyQkFRVNr3.
+b. Password authentication should be enabled for this user.</description>
+    </item>
+    
+    <item>
+      <title>Setup SSL for Nginx</title>
+      <link>https://nahid-ete2019.github.io/prod-profile/posts/setup-ssl-for-nginx/</link>
+      <pubDate>Mon, 21 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://nahid-ete2019.github.io/prod-profile/posts/setup-ssl-for-nginx/</guid>
       <description>The system admins team of xFusionCorp Industries needs to deploy a new application on App Server 2 in Stratos Datacenter. They have some pre-requites to get ready that server for application deployment. Prepare the server as per requirements shared below:
 Install and configure nginx on App Server 2.
 On App Server 2 there is a self signed SSL certificate and key present at location /tmp/nautilus.crt and /tmp/nautilus.key. Move them to some appropriate location and deploy the same in Nginx.</description>
@@ -20,55 +31,46 @@ On App Server 2 there is a self signed SSL certificate and key present at locati
     
     <item>
       <title>Markdown Syntax Guide</title>
-      <link>http://www.example.com/posts/markdown-syntax/</link>
+      <link>https://nahid-ete2019.github.io/prod-profile/posts/markdown-syntax/</link>
       <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://www.example.com/posts/markdown-syntax/</guid>
+      <guid>https://nahid-ete2019.github.io/prod-profile/posts/markdown-syntax/</guid>
       <description>&lt;p&gt;This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>Rich Content</title>
-      <link>http://www.example.com/posts/rich-content/</link>
-      <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>http://www.example.com/posts/rich-content/</guid>
-      <description>&lt;p&gt;Hugo ships with several &lt;a href=&#34;https://gohugo.io/content-management/shortcodes/#use-hugos-built-in-shortcodes&#34;&gt;Built-in Shortcodes&lt;/a&gt; for rich content, along with a &lt;a href=&#34;https://gohugo.io/about/hugo-and-gdpr/&#34;&gt;Privacy Config&lt;/a&gt; and a set of Simple Shortcodes that enable static and no-JS versions of various social media embeds.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
       <title>More Rich Content</title>
-      <link>http://www.example.com/posts/more-rich-content/</link>
+      <link>https://nahid-ete2019.github.io/prod-profile/posts/more-rich-content/</link>
       <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://www.example.com/posts/more-rich-content/</guid>
+      <guid>https://nahid-ete2019.github.io/prod-profile/posts/more-rich-content/</guid>
       <description>&lt;p&gt;Hugo Coder provides some Custom Shortcodes.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Placeholder Text</title>
-      <link>http://www.example.com/posts/placeholder-text/</link>
+      <link>https://nahid-ete2019.github.io/prod-profile/posts/placeholder-text/</link>
       <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://www.example.com/posts/placeholder-text/</guid>
+      <guid>https://nahid-ete2019.github.io/prod-profile/posts/placeholder-text/</guid>
       <description>&lt;p&gt;Lorem est tota propiore conpellat pectoribus de pectora summo.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Math Typesetting</title>
-      <link>http://www.example.com/posts/math-typesetting/</link>
+      <link>https://nahid-ete2019.github.io/prod-profile/posts/math-typesetting/</link>
       <pubDate>Fri, 08 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://www.example.com/posts/math-typesetting/</guid>
+      <guid>https://nahid-ete2019.github.io/prod-profile/posts/math-typesetting/</guid>
       <description>&lt;p&gt;Mathematical notation in a Hugo project can be enabled by using third party JavaScript libraries.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>External Page: Hugo Coder Wiki</title>
-      <link>http://www.example.com/posts/hugo-coder-wiki/</link>
+      <link>https://nahid-ete2019.github.io/prod-profile/posts/hugo-coder-wiki/</link>
       <pubDate>Mon, 04 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://www.example.com/posts/hugo-coder-wiki/</guid>
+      <guid>https://nahid-ete2019.github.io/prod-profile/posts/hugo-coder-wiki/</guid>
       <description></description>
     </item>
     

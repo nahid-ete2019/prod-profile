@@ -2,344 +2,327 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://www.example.com/</loc>
+    <loc>https://nahid-ete2019.github.io/prod-profile/tags/ftp/</loc>
+    <lastmod>2022-02-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nahid-ete2019.github.io/prod-profile/posts/install-and-configure-sftp/</loc>
+    <lastmod>2022-02-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nahid-ete2019.github.io/prod-profile/</loc>
     <lastmod>2022-02-21T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="pt-br"
-                href="http://www.example.com/pt-br/"
+                href="https://nahid-ete2019.github.io/prod-profile/pt-br/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://www.example.com/"
+                href="https://nahid-ete2019.github.io/prod-profile/"
                 />
   </url><url>
-    <loc>http://www.example.com/tags/nginx/</loc>
+    <loc>https://nahid-ete2019.github.io/prod-profile/tags/nginx/</loc>
     <lastmod>2022-02-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://www.example.com/posts/</loc>
-    <lastmod>2022-02-21T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="pt-br"
-                href="http://www.example.com/pt-br/posts/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://www.example.com/posts/"
-                />
-  </url><url>
-    <loc>http://www.example.com/posts/setup-ssl-for-nginx/</loc>
-    <lastmod>2022-02-21T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://www.example.com/tags/ssl/</loc>
-    <lastmod>2022-02-21T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://www.example.com/tags/</loc>
+    <loc>https://nahid-ete2019.github.io/prod-profile/posts/</loc>
     <lastmod>2022-02-21T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="pt-br"
-                href="http://www.example.com/pt-br/tags/"
+                href="https://nahid-ete2019.github.io/prod-profile/pt-br/posts/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://www.example.com/tags/"
+                href="https://nahid-ete2019.github.io/prod-profile/posts/"
                 />
   </url><url>
-    <loc>http://www.example.com/categories/</loc>
+    <loc>https://nahid-ete2019.github.io/prod-profile/posts/setup-ssl-for-nginx/</loc>
+    <lastmod>2022-02-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nahid-ete2019.github.io/prod-profile/tags/ssh/</loc>
+    <lastmod>2022-02-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nahid-ete2019.github.io/prod-profile/tags/ssl/</loc>
+    <lastmod>2022-02-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nahid-ete2019.github.io/prod-profile/tags/</loc>
+    <lastmod>2022-02-21T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt-br"
+                href="https://nahid-ete2019.github.io/prod-profile/pt-br/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://nahid-ete2019.github.io/prod-profile/tags/"
+                />
+  </url><url>
+    <loc>https://nahid-ete2019.github.io/prod-profile/categories/</loc>
     <lastmod>2019-03-11T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="pt-br"
-                href="http://www.example.com/pt-br/categories/"
+                href="https://nahid-ete2019.github.io/prod-profile/pt-br/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://www.example.com/categories/"
+                href="https://nahid-ete2019.github.io/prod-profile/categories/"
                 />
   </url><url>
-    <loc>http://www.example.com/tags/css/</loc>
+    <loc>https://nahid-ete2019.github.io/prod-profile/tags/css/</loc>
     <lastmod>2019-03-11T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="pt-br"
-                href="http://www.example.com/pt-br/tags/css/"
+                href="https://nahid-ete2019.github.io/prod-profile/pt-br/tags/css/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://www.example.com/tags/css/"
+                href="https://nahid-ete2019.github.io/prod-profile/tags/css/"
                 />
   </url><url>
-    <loc>http://www.example.com/tags/html/</loc>
+    <loc>https://nahid-ete2019.github.io/prod-profile/tags/html/</loc>
     <lastmod>2019-03-11T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="pt-br"
-                href="http://www.example.com/pt-br/tags/html/"
+                href="https://nahid-ete2019.github.io/prod-profile/pt-br/tags/html/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://www.example.com/tags/html/"
+                href="https://nahid-ete2019.github.io/prod-profile/tags/html/"
                 />
   </url><url>
-    <loc>http://www.example.com/tags/markdown/</loc>
+    <loc>https://nahid-ete2019.github.io/prod-profile/tags/markdown/</loc>
     <lastmod>2019-03-11T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="pt-br"
-                href="http://www.example.com/pt-br/tags/markdown/"
+                href="https://nahid-ete2019.github.io/prod-profile/pt-br/tags/markdown/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://www.example.com/tags/markdown/"
+                href="https://nahid-ete2019.github.io/prod-profile/tags/markdown/"
                 />
   </url><url>
-    <loc>http://www.example.com/posts/markdown-syntax/</loc>
+    <loc>https://nahid-ete2019.github.io/prod-profile/posts/markdown-syntax/</loc>
     <lastmod>2019-03-11T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="pt-br"
-                href="http://www.example.com/pt-br/posts/markdown-syntax/"
+                href="https://nahid-ete2019.github.io/prod-profile/pt-br/posts/markdown-syntax/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://www.example.com/posts/markdown-syntax/"
+                href="https://nahid-ete2019.github.io/prod-profile/posts/markdown-syntax/"
                 />
   </url><url>
-    <loc>http://www.example.com/series/</loc>
+    <loc>https://nahid-ete2019.github.io/prod-profile/series/</loc>
     <lastmod>2019-03-11T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="pt-br"
-                href="http://www.example.com/pt-br/series/"
+                href="https://nahid-ete2019.github.io/prod-profile/pt-br/series/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://www.example.com/series/"
+                href="https://nahid-ete2019.github.io/prod-profile/series/"
                 />
   </url><url>
-    <loc>http://www.example.com/categories/syntax/</loc>
+    <loc>https://nahid-ete2019.github.io/prod-profile/categories/syntax/</loc>
     <lastmod>2019-03-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://www.example.com/categories/themes/</loc>
+    <loc>https://nahid-ete2019.github.io/prod-profile/categories/themes/</loc>
     <lastmod>2019-03-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://www.example.com/series/themes-guide/</loc>
+    <loc>https://nahid-ete2019.github.io/prod-profile/series/themes-guide/</loc>
     <lastmod>2019-03-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://www.example.com/tags/privacy/</loc>
-    <lastmod>2019-03-10T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="pt-br"
-                href="http://www.example.com/pt-br/tags/privacy/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://www.example.com/tags/privacy/"
-                />
-  </url><url>
-    <loc>http://www.example.com/posts/rich-content/</loc>
-    <lastmod>2019-03-10T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="pt-br"
-                href="http://www.example.com/pt-br/posts/rich-content/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://www.example.com/posts/rich-content/"
-                />
-  </url><url>
-    <loc>http://www.example.com/tags/shortcodes/</loc>
-    <lastmod>2019-03-10T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="pt-br"
-                href="http://www.example.com/pt-br/tags/shortcodes/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://www.example.com/tags/shortcodes/"
-                />
-  </url><url>
-    <loc>http://www.example.com/posts/more-rich-content/</loc>
+    <loc>https://nahid-ete2019.github.io/prod-profile/posts/more-rich-content/</loc>
     <lastmod>2019-03-09T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="pt-br"
-                href="http://www.example.com/pt-br/posts/more-rich-content/"
+                href="https://nahid-ete2019.github.io/prod-profile/pt-br/posts/more-rich-content/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://www.example.com/posts/more-rich-content/"
+                href="https://nahid-ete2019.github.io/prod-profile/posts/more-rich-content/"
                 />
   </url><url>
-    <loc>http://www.example.com/posts/placeholder-text/</loc>
+    <loc>https://nahid-ete2019.github.io/prod-profile/posts/placeholder-text/</loc>
     <lastmod>2019-03-09T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="pt-br"
-                href="http://www.example.com/pt-br/posts/placeholder-text/"
+                href="https://nahid-ete2019.github.io/prod-profile/pt-br/posts/placeholder-text/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://www.example.com/posts/placeholder-text/"
+                href="https://nahid-ete2019.github.io/prod-profile/posts/placeholder-text/"
                 />
   </url><url>
-    <loc>http://www.example.com/tags/text/</loc>
+    <loc>https://nahid-ete2019.github.io/prod-profile/tags/shortcodes/</loc>
     <lastmod>2019-03-09T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="pt-br"
-                href="http://www.example.com/pt-br/tags/text/"
+                href="https://nahid-ete2019.github.io/prod-profile/pt-br/tags/shortcodes/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://www.example.com/tags/text/"
+                href="https://nahid-ete2019.github.io/prod-profile/tags/shortcodes/"
                 />
   </url><url>
-    <loc>http://www.example.com/posts/math-typesetting/</loc>
+    <loc>https://nahid-ete2019.github.io/prod-profile/tags/text/</loc>
+    <lastmod>2019-03-09T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt-br"
+                href="https://nahid-ete2019.github.io/prod-profile/pt-br/tags/text/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://nahid-ete2019.github.io/prod-profile/tags/text/"
+                />
+  </url><url>
+    <loc>https://nahid-ete2019.github.io/prod-profile/posts/math-typesetting/</loc>
     <lastmod>2019-03-08T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="pt-br"
-                href="http://www.example.com/pt-br/posts/math-typesetting/"
+                href="https://nahid-ete2019.github.io/prod-profile/pt-br/posts/math-typesetting/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://www.example.com/posts/math-typesetting/"
+                href="https://nahid-ete2019.github.io/prod-profile/posts/math-typesetting/"
                 />
   </url><url>
-    <loc>http://www.example.com/categories/development/</loc>
+    <loc>https://nahid-ete2019.github.io/prod-profile/categories/development/</loc>
     <lastmod>2019-03-04T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="pt-br"
-                href="http://www.example.com/pt-br/categories/development/"
+                href="https://nahid-ete2019.github.io/prod-profile/pt-br/categories/development/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://www.example.com/categories/development/"
+                href="https://nahid-ete2019.github.io/prod-profile/categories/development/"
                 />
   </url><url>
-    <loc>http://www.example.com/tags/development/</loc>
+    <loc>https://nahid-ete2019.github.io/prod-profile/tags/development/</loc>
     <lastmod>2019-03-04T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="pt-br"
-                href="http://www.example.com/pt-br/tags/development/"
+                href="https://nahid-ete2019.github.io/prod-profile/pt-br/tags/development/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://www.example.com/tags/development/"
+                href="https://nahid-ete2019.github.io/prod-profile/tags/development/"
                 />
   </url><url>
-    <loc>http://www.example.com/posts/hugo-coder-wiki/</loc>
+    <loc>https://nahid-ete2019.github.io/prod-profile/posts/hugo-coder-wiki/</loc>
     <lastmod>2019-03-04T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="pt-br"
-                href="http://www.example.com/pt-br/posts/hugo-coder-wiki/"
+                href="https://nahid-ete2019.github.io/prod-profile/pt-br/posts/hugo-coder-wiki/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://www.example.com/posts/hugo-coder-wiki/"
+                href="https://nahid-ete2019.github.io/prod-profile/posts/hugo-coder-wiki/"
                 />
   </url><url>
-    <loc>http://www.example.com/tags/hugo/</loc>
+    <loc>https://nahid-ete2019.github.io/prod-profile/tags/hugo/</loc>
     <lastmod>2019-03-04T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="pt-br"
-                href="http://www.example.com/pt-br/tags/hugo/"
+                href="https://nahid-ete2019.github.io/prod-profile/pt-br/tags/hugo/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://www.example.com/tags/hugo/"
+                href="https://nahid-ete2019.github.io/prod-profile/tags/hugo/"
                 />
   </url><url>
-    <loc>http://www.example.com/tags/themes/</loc>
+    <loc>https://nahid-ete2019.github.io/prod-profile/tags/themes/</loc>
     <lastmod>2019-03-04T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="pt-br"
-                href="http://www.example.com/pt-br/tags/themes/"
+                href="https://nahid-ete2019.github.io/prod-profile/pt-br/tags/themes/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://www.example.com/tags/themes/"
+                href="https://nahid-ete2019.github.io/prod-profile/tags/themes/"
                 />
   </url><url>
-    <loc>http://www.example.com/about/</loc>
+    <loc>https://nahid-ete2019.github.io/prod-profile/about/</loc>
     <lastmod>2019-02-28T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="pt-br"
-                href="http://www.example.com/pt-br/about/"
+                href="https://nahid-ete2019.github.io/prod-profile/pt-br/about/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://www.example.com/about/"
+                href="https://nahid-ete2019.github.io/prod-profile/about/"
                 />
   </url><url>
-    <loc>http://www.example.com/authors/</loc>
+    <loc>https://nahid-ete2019.github.io/prod-profile/authors/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="pt-br"
-                href="http://www.example.com/pt-br/authors/"
+                href="https://nahid-ete2019.github.io/prod-profile/pt-br/authors/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://www.example.com/authors/"
+                href="https://nahid-ete2019.github.io/prod-profile/authors/"
                 />
   </url><url>
-    <loc>http://www.example.com/contact/</loc>
+    <loc>https://nahid-ete2019.github.io/prod-profile/contact/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="pt-br"
-                href="http://www.example.com/pt-br/contact/"
+                href="https://nahid-ete2019.github.io/prod-profile/pt-br/contact/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://www.example.com/contact/"
+                href="https://nahid-ete2019.github.io/prod-profile/contact/"
                 />
   </url><url>
-    <loc>http://www.example.com/projects/</loc>
+    <loc>https://nahid-ete2019.github.io/prod-profile/projects/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="pt-br"
-                href="http://www.example.com/pt-br/projects/"
+                href="https://nahid-ete2019.github.io/prod-profile/pt-br/projects/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://www.example.com/projects/"
+                href="https://nahid-ete2019.github.io/prod-profile/projects/"
                 />
   </url>
 </urlset>
