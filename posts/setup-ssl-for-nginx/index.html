@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Language" content="en">
+    <meta name="color-scheme" content="light dark">
+
+    
+      <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests; block-all-mixed-content; default-src 'self'; child-src 'self'; font-src 'self' https://fonts.gstatic.com https://cdn.jsdelivr.net/; form-action 'self'; frame-src 'self'; img-src 'self'; object-src 'none'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com/ https://cdn.jsdelivr.net/; script-src 'self' 'unsafe-inline' https://www.google-analytics.com https://cdn.jsdelivr.net/; prefetch-src 'self'; connect-src 'self' https://www.google-analytics.com;">
+
+    
+
+    <meta name="author" content="Md. Nahid Hasan">
+    <meta name="description" content="How to Setup SSL Certificate for Nginx">
+    <meta name="keywords" content="blog,developer,personal">
+
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Setup SSL for Nginx"/>
+<meta name="twitter:description" content="How to Setup SSL Certificate for Nginx"/>
+
+    <meta property="og:title" content="Setup SSL for Nginx" />
+<meta property="og:description" content="How to Setup SSL Certificate for Nginx" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://www.example.com/posts/setup-ssl-for-nginx/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-02-21T00:00:00+00:00" />
+<meta property="article:modified_time" content="2022-02-21T00:00:00+00:00" />
+
+
+
+    <title>
+  Setup SSL for Nginx · Nahid Hasan
+</title>
+
+    
+      <link rel="canonical" href="http://www.example.com/posts/setup-ssl-for-nginx/">
+    
+
+    <link rel="preload" href="/fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
+
+    
+      
+      
+      <link rel="stylesheet" href="/css/coder.min.d9fddbffe6f27e69985dc5fe0471cdb0e57fbf4775714bc3d847accb08f4a1f6.css" integrity="sha256-2f3b/&#43;byfmmYXcX&#43;BHHNsOV/v0d1cUvD2Eesywj0ofY=" crossorigin="anonymous" media="screen" />
+    
+
+    
+
+    
+      
+        
+        
+        <link rel="stylesheet" href="/css/coder-dark.min.002ee2378e14c7a68f1f0a53d9694ed252090987c4e768023fac694a4fc5f793.css" integrity="sha256-AC7iN44Ux6aPHwpT2WlO0lIJCYfE52gCP6xpSk/F95M=" crossorigin="anonymous" media="screen" />
+      
+    
+
+    
+
+    
+
+    <link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+
+    <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+    <meta name="generator" content="Hugo 0.92.2" />
+  </head>
+
+  
+  
+    
+  
+  <body class="preload-transitions colorscheme-auto">
+    
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="/">
+      Nahid Hasan
+    </a>
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/about/">About</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/posts/">Blog</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/projects/">Projects</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/contact/">Contact me</a>
+            </li>
+          
+        
+        
+          
+          
+          
+            
+          
+            
+              
+                <li class="navigation-item menu-separator">
+                  <span>|</span>
+                </li>
+                
+              
+              <li class="navigation-item">
+                <a href="http://www.example.com/pt-br/">🇧🇷</a>
+              </li>
+            
+          
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+      <div class="content">
+        
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">
+            <a class="title-link" href="http://www.example.com/posts/setup-ssl-for-nginx/">
+              Setup SSL for Nginx
+            </a>
+          </h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+              <time datetime='2022-02-21T00:00:00Z'>
+                February 21, 2022
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fa fa-clock-o" aria-hidden="true"></i>
+              2-minute read
+            </span>
+          </div>
+          
+          
+          <div class="tags">
+  <i class="fa fa-tag" aria-hidden="true"></i>
+    <span class="tag">
+      <a href="/tags/ssl/">SSL</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/tags/nginx/">Nginx</a>
+    </span></div>
+
+        </div>
+      </header>
+
+      <div>
+        
+        <p>The system admins team of xFusionCorp Industries needs to deploy a new application on App Server 2 in Stratos Datacenter. They have some pre-requites to get ready that server for application deployment. Prepare the server as per requirements shared below:</p>
+<p>Install and configure nginx on App Server 2.</p>
+<p>On App Server 2 there is a self signed SSL certificate and key present at location /tmp/nautilus.crt and /tmp/nautilus.key. Move them to some appropriate location and deploy the same in Nginx.</p>
+<p>Create an index.html file with content Welcome! under Nginx document root.</p>
+<p>For final testing try to access the App Server 2 link (either hostname or IP) from jump host using curl command. For example curl -Ik https://<!-- raw HTML omitted -->/.</p>
+<p>Solution:</p>
+<h1 id="yum-install---epel-release--y">
+  yum install   epel-release -y
+  <a class="heading-link" href="#yum-install---epel-release--y">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h1>
+<h1 id="yum-install---nginx--y">
+  yum install   nginx -y
+  <a class="heading-link" href="#yum-install---nginx--y">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h1>
+<h1 id="vi-etcnginxnginxconf">
+  vi /etc/nginx/nginx.conf
+  <a class="heading-link" href="#vi-etcnginxnginxconf">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h1>
+<p>server {</p>
+<pre><code>    listen       80;
+
+    listen       [::]:80;
+
+    server_name  172.16.238.12;
+
+    root         /usr/share/nginx/html;
+
+
+
+    # Load configuration files for the default server block.
+
+    include /etc/nginx/default.d/*.conf;
+
+
+
+    error_page 404 /404.html;
+
+    location = /404.html {
+
+    }
+
+
+
+    error_page 500 502 503 504 /50x.html;
+
+    location = /50x.html {
+
+    }
+
+}
+</code></pre>
+<h1 id="settings-for-a-tls-enabled-server">
+  Settings for a TLS enabled server.
+  <a class="heading-link" href="#settings-for-a-tls-enabled-server">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h1>
+<pre><code>server {
+
+    listen       443 ssl http2;
+
+    listen       [::]:443 ssl http2;
+
+    server_name  172.16.238.12;
+
+    root         /usr/share/nginx/html;
+
+    ssl_certificate &quot;/etc/pki/CA/certs/nautilus.crt&quot;;
+
+    ssl_certificate_key &quot;/etc/pki/CA/private/nautilus.key&quot;;
+
+    ssl_session_cache shared:SSL:1m;
+
+    ssl_session_timeout  10m;
+
+    ssl_ciphers HIGH:!aNULL:!MD5;
+
+    ssl_prefer_server_ciphers on;
+</code></pre>
+<h1 id="-load-configuration-files-for-the-default-server-block">
+  # Load configuration files for the default server block.
+  <a class="heading-link" href="#-load-configuration-files-for-the-default-server-block">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h1>
+<pre><code>    include /etc/nginx/default.d/*.conf;
+
+
+
+    error_page 404 /404.html;
+
+        location = /40x.html {
+
+    }
+
+
+
+    error_page 500 502 503 504 /50x.html;
+
+        location = /50x.html {
+
+    }
+
+}
+</code></pre>
+<p>}</p>
+<h1 id="cp-tmpnautiluscrt-etcpkicacerts">
+  cp /tmp/nautilus.crt /etc/pki/CA/certs/
+  <a class="heading-link" href="#cp-tmpnautiluscrt-etcpkicacerts">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h1>
+<h1 id="cp-tmpnautiluskey-etcpkicaprivate">
+  cp /tmp/nautilus.key /etc/pki/CA/private/
+  <a class="heading-link" href="#cp-tmpnautiluskey-etcpkicaprivate">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h1>
+<h1 id="ll-usrsharenginxhtml">
+  ll /usr/share/nginx/html/
+  <a class="heading-link" href="#ll-usrsharenginxhtml">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h1>
+<h1 id="rm-usrsharenginxhtmlindexhtml">
+  rm /usr/share/nginx/html/index.html
+  <a class="heading-link" href="#rm-usrsharenginxhtmlindexhtml">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h1>
+<p>rm: remove symbolic link ‘/usr/share/nginx/html/index.html’? y</p>
+<h1 id="vi-usrsharenginxhtmlindexhtml">
+  vi /usr/share/nginx/html/index.html
+  <a class="heading-link" href="#vi-usrsharenginxhtmlindexhtml">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h1>
+<p>[root@stapp03 ~]# ll /usr/share/nginx/html/</p>
+<p>total 16</p>
+<p>-rw-r&ndash;r&ndash; 1 root root 3650 Jun  2 00:21 404.html</p>
+<p>-rw-r&ndash;r&ndash; 1 root root 3693 Jun  2 00:21 50x.html</p>
+<p>lrwxrwxrwx 1 root root   20 Jul 25 11:56 en-US -&gt; ../../doc/HTML/en-US</p>
+<p>drwxr-xr-x 2 root root 4096 Jul 25 11:56 icons</p>
+<p>lrwxrwxrwx 1 root root   18 Jul 25 11:56 img -&gt; ../../doc/HTML/img</p>
+<p>lrwxrwxrwx 1 root root   25 Jul 25 11:56 index.html -&gt; ../../doc/HTML/index.html</p>
+<p>-rw-r&ndash;r&ndash; 1 root root  368 Jun  2 00:21 nginx-logo.png</p>
+<p>lrwxrwxrwx 1 root root   14 Jul 25 11:56 poweredby.png -&gt; nginx-logo.png</p>
+<h1 id="heading">
+  
+  <a class="heading-link" href="#heading">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h1>
+<h1 id="rm-usrsharenginxhtmlindexhtml-1">
+  rm /usr/share/nginx/html/index.html
+  <a class="heading-link" href="#rm-usrsharenginxhtmlindexhtml-1">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h1>
+<p>rm: remove symbolic link ‘/usr/share/nginx/html/index.html’? y</p>
+<h1 id="heading-1">
+  
+  <a class="heading-link" href="#heading-1">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h1>
+<h1 id="vi-usrsharenginxhtmlindexhtml-1">
+  vi /usr/share/nginx/html/index.html
+  <a class="heading-link" href="#vi-usrsharenginxhtmlindexhtml-1">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h1>
+<h1 id="cat-usrsharenginxhtmlindexhtml">
+  cat /usr/share/nginx/html/index.html
+  <a class="heading-link" href="#cat-usrsharenginxhtmlindexhtml">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h1>
+<p>Welcome!</p>
+<h1 id="systemctl-start-nginx">
+  systemctl start nginx
+  <a class="heading-link" href="#systemctl-start-nginx">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h1>
+<h1 id="systemctl-status-nginx">
+  systemctl status nginx
+  <a class="heading-link" href="#systemctl-status-nginx">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h1>
+<p>$ curl -Ik https://stapp02</p>
+<p>/tmp/nautilus.crt</p>
+<p>/tmp/nautilus.key</p>
+
+      </div>
+
+
+      <footer>
+        
+
+
+        
+        
+        
+      </footer>
+    </article>
+
+    
+  </section>
+
+      </div>
+
+      <footer class="footer">
+  <section class="container">
+    ©
+    
+      2019 -
+    
+    2022
+     Md. Nahid Hasan 
+    ·
+    
+    Powered by <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>.
+    
+  </section>
+</footer>
+
+    </main>
+
+    
+      
+      <script src="/js/coder.min.39a51230dce2ac866c049b52573e38bf60666af4bc63c1bdf203b9b2d95b1cd6.js" integrity="sha256-OaUSMNzirIZsBJtSVz44v2BmavS8Y8G98gO5stlbHNY="></script>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+  </body>
+
+</html>
