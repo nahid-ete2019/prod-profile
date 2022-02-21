@@ -190,7 +190,50 @@ passwd rose
 pass: GyQkFRVNr3
 
 # mkdir -p /var/www/code
+# mkdir -p /var/www/code
 
+# ll -lsd /var/www/code
+# chown root:root  /var/www
+
+# chmod -R 755 /var/www
+
+# ll -lsd /var/www/
+
+
+# vi /etc/ssh/sshd_config
+
+# cat /etc/ssh/sshd_config  |grep sftp -A 10
+
+#subsystem      sftp    /usr/libexec/openssh/sftp-server
+
+Subsystem       sftp    internal-sftp
+
+Match User rose
+
+ForceCommand internal-sftp
+
+PasswordAuthentication yes
+
+ChrootDirectory /var/www/nfsshare
+
+PermitTunnel no
+
+AllowTcpForwarding no
+
+X11Forwarding no
+
+AllowAgentForwarding no
+
+ # Example of overriding settings on a per-user basis
+
+#Match User anoncvs
+
+#       X11Forwarding no
+
+
+
+sftp rose@localhost
+sftp rose@stapp02
 
 </code></pre></div>
       </div>
